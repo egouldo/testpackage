@@ -7,7 +7,10 @@
 apply_act_predict(strategies_df)
 }
 \arguments{
-\item{strategies_df}{}
+\item{strategies_df}{A dataframe of strategies}
+}
+\value{
+strategies_df A dataframe with the outcoems of simulated management at the end of the specified time horizon
 }
 \description{
 helper function for simulating grassland condition under management
