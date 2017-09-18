@@ -7,5 +7,5 @@ install:
   - wget https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz
   - tar -xvf 'RNetica_0.4-6.tgz'
   - R CMD INSTALL RNetica
-  - Rscript -e 'install.packages("dplyr")'
+  - Rscript -e 'install.packages(c("devtools", "knitr", "dplyr", "purrr", "readr", "rprojroot", "tidyr", "rmarkdown"))'
 warnings_are_errors: false
