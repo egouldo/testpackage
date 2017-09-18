@@ -3,3 +3,7 @@
 language: R
 sudo: false
 cache: packages
+install:
+  - wget https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz
+  - tar -xvf 'RNetica_0.4-6.tgz'
+  - R CMD INSTALL RNetica
