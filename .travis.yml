@@ -5,7 +5,9 @@ sudo: false
 cache: packages
 before_install:
   - chmod +x install-RNetica.sh
+  - chmod +x install-NeticaAPI.sh
 install:
   - ./install-RNetica.sh
+  - ./install-NeticaAPI.sh
   - Rscript -e 'install.packages(c("devtools", "knitr", "dplyr", "purrr", "readr", "rprojroot", "tidyr", "rmarkdown"))'
 warnings_are_errors: false
